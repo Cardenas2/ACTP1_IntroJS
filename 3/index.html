@@ -77,8 +77,11 @@
         }, 1000);
 
       })
-
-      
+      //cambiar el tamño de fuente
+      var size = $(".section-1 h1").css("font-size")
+      $(".section-1 h1").css("font-size", parseInt(size) *2);
+      //cambiar el ultimo row
+      $(".row").last().css("background-color" , "red").css("color" , "#fff");
     </script>
   </body>
 </html>

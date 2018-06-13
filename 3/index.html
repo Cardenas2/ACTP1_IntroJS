@@ -64,10 +64,16 @@
     </form>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script>
-      //comentario
+      //modificar color h1
       $("h1").css("color","red");
       $(".section-1").css('background','#fff000');
       $(".counter").html(Number($(".counter").html()) + 10);
+      //accion de click
+      $("#row-3").click(function(){
+        alert("click");
+        $("#row-3").css("background" , "#333");
+      })
+
       
     </script>
   </body>

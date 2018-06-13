@@ -63,6 +63,7 @@
       </fieldset>
     </form>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script>
       //modificar color h1
       $("h1").css("color","red");
@@ -71,7 +72,10 @@
       //accion de click
       $("#row-3").click(function(){
         alert("click");
-        $("#row-3").css("background" , "#333");
+      $("#row-3").animate({
+          backgroundColor: "gray",
+        }, 1000);
+
       })
 
       
